@@ -1,26 +1,26 @@
 # Typograf Service
 
 The typograf prepares your text for web-publish.
+It does the most routine operations, for example:
+- replacement of quotes ' and " to « »;
+- in the right places, replace hyphens with dashes;
+- replacement of hyphens with short dashes in telephone numbers;
+- linking numbers with subsequent words with an indissoluble space;
+- removing extra spaces and line breaks;
+- linking any words of 1-2 characters followed by words.
 
 # How to use
 
-1. virtualenv -p python3 env
-2. source env/bin/activate
-3. pip install -r requirements.txt
-4. python server.py.
-5. open http://127.0.0.1:5000/
+```#!bash
 
-# Tests
+virtualenv -p python3 env
+source env/bin/activate
+pip install -r requirements.txt
+python server.py.
 
 ```
-❯ python tests.py 
-........
-----------------------------------------------------------------------
-Ran 8 tests in 0.009s
 
-OK
-(env)
-```
+Open [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 # Project Goals
 

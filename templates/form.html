@@ -51,11 +51,11 @@
         url: "/typografy",
         type: "POST",
         data: $('form').serialize(),
-        dataType: "html"
+        dataType: "json"
       });
         
       request.done(function(response) {
-        $(".js-result").text(response);
+        $(".js-result").html(response.text);
       });
         
       request.fail(function(jqXHR, textStatus) {
