@@ -23,5 +23,4 @@ def typografy():
 
 
 if __name__ == "__main__":
-    print(ENV_DEBUG)
     app.run(debug=ENV_DEBUG)
